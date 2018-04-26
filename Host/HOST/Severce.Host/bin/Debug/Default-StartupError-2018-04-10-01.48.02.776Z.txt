@@ -1,0 +1,6 @@
+2018-04-10-01.48.02.776ZZ
+ERROR starting Orleans silo name=Default Exception=
+Exc level 0: System.InvalidOperationException: Can not locate the type specified in the configuration file: 'Garain.Host.MyStartup, Garain.Host'.
+   在 Orleans.Runtime.Startup.StartupBuilder.ConfigureStartup(String startupTypeName, IServiceCollection serviceCollection)
+   在 Orleans.Runtime.Silo..ctor(SiloInitializationParameters initializationParams)
+   在 Orleans.Runtime.Host.SiloHost.InitializeOrleansSilo()

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<OrleansConfiguration xmlns="urn:orleans">
+  <Globals>
+    <!--<SystemStore SystemStoreType="SqlServer" DeploymentId="OrleansTest" DataConnectionString="Data Source=127.0.0.1;Initial Catalog=Ak47_Mall;Persist Security Info=True;User ID=dev;Password=dev;App=EntityFramework;integrated security=True;"/>-->
+    <StorageProviders>
+      <Provider Type="Orleans.Storage.MemoryStorage" Name="MemoryStore" />
+      <Provider Type="Orleans.Storage.MemoryStorage" Name="Default" />
+      <!--<Provider Type="Orleans.Storage.AzureBlobStorage" Name="OrleansStorage"
+                DataConnectionString="Data Source=127.0.0.1;Initial Catalog=Ak47_Mall;Persist Security Info=True;User ID=dev;Password=dev;App=EntityFramework;integrated security=True;" AdoInvariant="System.Data.SqlClient"
+                UseJsonFormat="both" />-->
+      <!--<add name="Entities" connectionString="Data Source=192.168.0.91;Initial Catalog=CQS_Baojia_Config;Persist Security Info=True;User ID=dev;Password=dev;App=EntityFramework;integrated security=True;"  providerName ="System.Data.SqlClient" />-->
+
+    </StorageProviders>
+    <SeedNode Address="localhost" Port="22222"/>
+    <Messaging ResponseTimeout="30s"/>
+  </Globals>
+  <Defaults>
+   
+    <Startup Type="Severce.Host.MyStartup, Severce.Host"/>
+    <Networking Address="localhost" Port="22222"/>
+    <ProxyingGateway Address="localhost" Port="40000" />
+    <Tracing DefaultTraceLevel="Info" TraceToConsole="true" TraceToFile="{0}-{1}.log" PropagateActivityId="false" BulkMessageLimit="1000">
+      <TraceLevelOverride LogPrefix="Application" TraceLevel="Info" />
+      <!--
+<TraceLevelOverride LogPrefix="Runtime.Dispatcher" TraceLevel="Verbose" />
+<TraceLevelOverride LogPrefix="AssemblyLoader.Silo" TraceLevel="Warning" />
+-->
+    </Tracing> 
+    <Statistics MetricsTableWriteInterval="30s" PerfCounterWriteInterval="30s" LogWriteInterval="300s" WriteLogStatisticsToTable="true" StatisticsCollectionLevel="Info"/>
+  </Defaults>
+
+  <SqlStorages>
+    <Startup type="Garain.Host.Startup,Garain.Host"/>
+    <Networking Address="localhost" Port="22222"/>
+    <ProxyingGateway Address="localhost" Port="1234" />
+    <Tracing DefaultTraceLevel="Info" TraceToConsole="true" TraceToFile="{0}-{1}.log" PropagateActivityId="false" BulkMessageLimit="1000">
+      <TraceLevelOverride LogPrefix="Application" TraceLevel="Info" />
+      <!--
+<TraceLevelOverride LogPrefix="Runtime.Dispatcher" TraceLevel="Verbose" />
+<TraceLevelOverride LogPrefix="AssemblyLoader.Silo" TraceLevel="Warning" />
+-->
+    </Tracing>
+    <Statistics MetricsTableWriteInterval="30s" PerfCounterWriteInterval="30s" LogWriteInterval="300s" WriteLogStatisticsToTable="true" StatisticsCollectionLevel="Info"/>
+  </SqlStorages>
+
+</OrleansConfiguration>

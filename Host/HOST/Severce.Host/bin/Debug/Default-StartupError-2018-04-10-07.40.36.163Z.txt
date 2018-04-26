@@ -1,0 +1,4 @@
+2018-04-10-07.40.36.163ZZ
+ERROR starting Orleans silo name=Default Exception=
+Exc level 0: System.SystemException: Failed to start Orleans silo 'Default' as a Primary node.
+   在 Severce.Host.OrleansHostWrapper.get_Run() 位置 G:\Program_AK45\Host\HOST\Severce.Host\OrleansHostWrapper.cs:行号 141

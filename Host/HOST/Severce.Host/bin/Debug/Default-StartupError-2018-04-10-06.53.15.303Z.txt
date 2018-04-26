@@ -1,0 +1,36 @@
+2018-04-10-06.53.15.303ZZ
+ERROR starting Orleans silo name=Default Exception=
+Exc level 0: System.AggregateException: 发生一个或多个错误。
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait(TimeSpan timeout)
+   在 Orleans.OrleansTaskExtentions.WaitWithThrow(Task task, TimeSpan timeout)
+   在 Orleans.Runtime.Silo.DoStart()
+   在 Orleans.Runtime.Silo.Start()
+   在 Orleans.Runtime.Host.SiloHost.StartOrleansSilo(Boolean catchExceptions)
+Exc level 1: Orleans.Providers.ProviderInitializationException: Exception initializing provider Name=OrleansStorage Type=[OrleansStorage, Orleans.Storage.AdoNetStorageProvider]
+   在 Orleans.Providers.ProviderLoader`1.<InitProviders>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Orleans.Runtime.Scheduler.SchedulerExtensions.<>c__DisplayClass1_0.<<QueueTask>b__0>d.MoveNext()
+Exc level 2: System.InvalidOperationException: Unable to find and/or load a candidate assembly for 'System.Data.SqlClient' invariant name.
+   在 Orleans.SqlUtils.DbConnectionFactory.GetFactory(String invariantName)
+   在 System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   在 Orleans.SqlUtils.DbConnectionFactory.CreateConnection(String invariantName, String connectionString)
+   在 Orleans.SqlUtils.RelationalStorage.<ExecuteAsync>d__14`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Orleans.SqlUtils.RelationalStorage.ReadAsync[TResult](String query, Action`1 parameterProvider, Func`4 selector, CancellationToken cancellationToken, CommandBehavior commandBehavior)
+   在 Orleans.Storage.AdoNetStorageProvider.<Init>d__38.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Orleans.Providers.ProviderLoader`1.<InitProviders>d__7.MoveNext()
+Exc level 3: System.IO.FileNotFoundException: 未能加载文件或程序集“System.Data.SqlClient”或它的某一个依赖项。系统找不到指定的文件。
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   在 Orleans.SqlUtils.DbConnectionFactory.GetFactory(String invariantName)

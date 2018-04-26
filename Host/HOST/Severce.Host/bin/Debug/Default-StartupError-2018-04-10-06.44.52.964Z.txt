@@ -1,0 +1,14 @@
+2018-04-10-06.44.52.964ZZ
+ERROR starting Orleans silo name=Default Exception=
+Exc level 0: System.IO.FileNotFoundException: 未能加载文件或程序集“OrleansSQLUtils”或它的某一个依赖项。系统找不到指定的文件。
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   在 Orleans.Runtime.AssemblyLoader.LoadAndCreateInstance[T](String assemblyName, Logger logger)
+   在 Orleans.Runtime.ReminderService.ReminderTable.Initialize(Silo silo, IGrainFactory grainFactory, String reminderTableAssembly)
+   在 Orleans.Runtime.LocalReminderServiceFactory.CreateReminderService(Silo silo, IGrainFactory grainFactory, TimeSpan iniTimeSpan, ISiloRuntimeClient runtimeClient)
+   在 Orleans.Runtime.Silo.InjectDependencies()
+   在 Orleans.Runtime.Silo.DoStart()
+   在 Orleans.Runtime.Silo.Start()
+   在 Orleans.Runtime.Host.SiloHost.StartOrleansSilo(Boolean catchExceptions)

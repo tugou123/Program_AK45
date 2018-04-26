@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <configur>
+    <dlls>
+      <dll name="Author.Model" value="Author.Model.dll" type="Author" />
+      <dll name="Author.Query" value="Author.Query.dll" type="Author"/>
+      <dll name="Author.QueryContract" value="Author.QueryContract.dll" type="Author"/>
+      <dll name="Author.Write" value="Author.Write.dll" type="Author"/>
+      <dll name="Author.WriteContract" value="Author.WriteContract.dll" type="Author"/>
+    </dlls>
+  </configur>
+</root>

@@ -1,0 +1,13 @@
+2018-04-10-07.40.37.309ZZ
+ERROR starting Orleans silo name=Default Exception=
+Exc level 0: System.Reflection.TargetInvocationException: 调用的目标发生了异常。
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Orleans.Runtime.Startup.ConfigureServicesBuilder.Invoke(Object instance, IServiceCollection exportServices)
+   在 Orleans.Runtime.Startup.ConfigureServicesBuilder.Build(Object instance, IServiceCollection services)
+   在 Orleans.Runtime.Startup.StartupBuilder.ConfigureStartup(String startupTypeName, IServiceCollection serviceCollection)
+   在 Orleans.Runtime.Silo..ctor(SiloInitializationParameters initializationParams)
+   在 Orleans.Runtime.Host.SiloHost.InitializeOrleansSilo()
+Exc level 1: System.IO.FileNotFoundException: 未能加载文件或程序集“Author.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+   在 Severce.Host.MyStartup.ConfigureServices(IServiceCollection services)
