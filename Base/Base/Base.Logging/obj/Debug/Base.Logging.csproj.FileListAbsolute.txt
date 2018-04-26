@@ -1,0 +1,4 @@
+G:\Program_AK45\Base\Base\Base.Logging\bin\Debug\Base.Logging.dll
+G:\Program_AK45\Base\Base\Base.Logging\bin\Debug\Base.Logging.pdb
+G:\Program_AK45\Base\Base\Base.Logging\obj\Debug\Base.Logging.dll
+G:\Program_AK45\Base\Base\Base.Logging\obj\Debug\Base.Logging.pdb

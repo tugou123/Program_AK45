@@ -1,0 +1,5 @@
+G:\Program_AK45\Base\Base\Base.Info\bin\Debug\Base.Info.dll
+G:\Program_AK45\Base\Base\Base.Info\bin\Debug\Base.Info.pdb
+G:\Program_AK45\Base\Base\Base.Info\obj\Debug\Base.Info.csprojResolveAssemblyReference.cache
+G:\Program_AK45\Base\Base\Base.Info\obj\Debug\Base.Info.dll
+G:\Program_AK45\Base\Base\Base.Info\obj\Debug\Base.Info.pdb

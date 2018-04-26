@@ -1,0 +1,4 @@
+G:\Program_AK45\Base\Base\Base.Expand\bin\Debug\Base.Expand.dll
+G:\Program_AK45\Base\Base\Base.Expand\bin\Debug\Base.Expand.pdb
+G:\Program_AK45\Base\Base\Base.Expand\obj\Debug\Base.Expand.dll
+G:\Program_AK45\Base\Base\Base.Expand\obj\Debug\Base.Expand.pdb

@@ -1,0 +1,5 @@
+G:\Program_AK45\Base\Base\Base.Commomet\bin\Debug\Base.Commomet.dll
+G:\Program_AK45\Base\Base\Base.Commomet\bin\Debug\Base.Commomet.pdb
+G:\Program_AK45\Base\Base\Base.Commomet\obj\Debug\Base.Commomet.dll
+G:\Program_AK45\Base\Base\Base.Commomet\obj\Debug\Base.Commomet.pdb
+G:\Program_AK45\Base\Base\Base.Commomet\obj\Debug\Base.Commomet.csprojResolveAssemblyReference.cache
