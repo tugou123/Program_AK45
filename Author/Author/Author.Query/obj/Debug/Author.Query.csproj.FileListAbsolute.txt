@@ -1,0 +1,4 @@
+G:\Program_AK45\Author\Author\Author.Query\bin\Debug\Author.Query.dll
+G:\Program_AK45\Author\Author\Author.Query\bin\Debug\Author.Query.pdb
+G:\Program_AK45\Author\Author\Author.Query\obj\Debug\Author.Query.dll
+G:\Program_AK45\Author\Author\Author.Query\obj\Debug\Author.Query.pdb

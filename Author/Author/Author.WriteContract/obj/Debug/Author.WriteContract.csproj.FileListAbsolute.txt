@@ -1,0 +1,14 @@
+G:\Program_AK45\Author\Author\Author.WriteContract\bin\Debug\Author.WriteContract.dll
+G:\Program_AK45\Author\Author\Author.WriteContract\bin\Debug\Author.WriteContract.pdb
+G:\Program_AK45\Author\Author\Author.WriteContract\bin\Debug\Newtonsoft.Json.dll
+G:\Program_AK45\Author\Author\Author.WriteContract\bin\Debug\Orleans.dll
+G:\Program_AK45\Author\Author\Author.WriteContract\bin\Debug\System.Collections.Immutable.dll
+G:\Program_AK45\Author\Author\Author.WriteContract\bin\Debug\System.Reflection.Metadata.dll
+G:\Program_AK45\Author\Author\Author.WriteContract\bin\Debug\Newtonsoft.Json.xml
+G:\Program_AK45\Author\Author\Author.WriteContract\bin\Debug\Orleans.xml
+G:\Program_AK45\Author\Author\Author.WriteContract\bin\Debug\System.Collections.Immutable.xml
+G:\Program_AK45\Author\Author\Author.WriteContract\bin\Debug\System.Reflection.Metadata.xml
+G:\Program_AK45\Author\Author\Author.WriteContract\obj\Debug\Author.WriteContract.dll
+G:\Program_AK45\Author\Author\Author.WriteContract\obj\Debug\Author.WriteContract.pdb
+G:\Program_AK45\Author\Author\Author.WriteContract\obj\Debug\Author.WriteContract.csprojResolveAssemblyReference.cache
+G:\Program_AK45\Author\Author\Author.WriteContract\bin\Debug\Base.Expand.dll

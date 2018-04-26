@@ -1,0 +1,4 @@
+G:\Program_AK45\Author\Author\Author.QueryContract\bin\Debug\Author.QueryContract.dll
+G:\Program_AK45\Author\Author\Author.QueryContract\bin\Debug\Author.QueryContract.pdb
+G:\Program_AK45\Author\Author\Author.QueryContract\obj\Debug\Author.QueryContract.dll
+G:\Program_AK45\Author\Author\Author.QueryContract\obj\Debug\Author.QueryContract.pdb
